@@ -1,20 +1,19 @@
 # Random Forest Classifier Example
-
+from matplotlib import pyplot as plt
 from sklearn.datasets import load_iris
-from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import plot_confusion_matrix
-import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
 
 
 def main():
 
     """
-    Random Tree Classifier Example using sklearn function.
+    Random Forest Classifier Example using sklearn function.
     Iris type dataset is used to demonstrate algorithm.
     """
 
-    # Load Iris house price dataset
+    # Load Iris dataset
     iris = load_iris()
 
     # Split dataset into train and test data
